@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://dooxabobia15y"]
+
+[ext_resource type="Texture2D" uid="uid://bllrhtst7ju8d" path="res://assests/Space Background (2).png" id="1_a8ltv"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 774.0
+offset_bottom = 426.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1251.0
+offset_bottom = 799.0
+texture = ExtResource("1_a8ltv")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.061
+anchor_bottom = 0.21
+offset_left = 442.0
+offset_top = 162.0
+offset_right = 507.75
+offset_bottom = 211.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Settings" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="Credits" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+
+[node name="Quit" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
